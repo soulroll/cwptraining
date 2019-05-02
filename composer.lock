@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a4ff303c1af87f45df68221f361106c",
+    "content-hash": "b19a18e2c0626e834ea8471e4b4fda0d",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -713,6 +713,53 @@
             "time": "2019-01-28T20:25:53+00:00"
         },
         {
+            "name": "cwp/agency-extensions",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/cwp-agencyextensions.git",
+                "reference": "312ecb1e772e3daf7c65f34bf10207813f9fdcdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/cwp-agencyextensions/zipball/312ecb1e772e3daf7c65f34bf10207813f9fdcdb",
+                "reference": "312ecb1e772e3daf7c65f34bf10207813f9fdcdb",
+                "shasum": ""
+            },
+            "require": {
+                "cwp/cwp": "^2",
+                "silverstripe/framework": "^4.1",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "thirdparty/TinyMCE-FontAwesome-Plugin/fontawesome",
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "CWP\\AgencyExtensions\\": "src/",
+                    "CWP\\AgencyExtensions\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Base module for the default CWP theme to add features",
+            "keywords": [
+                "cwp",
+                "silverstripe"
+            ],
+            "time": "2019-02-14T03:47:33+00:00"
+        },
+        {
             "name": "cwp/cwp",
             "version": "2.2.3",
             "source": {
@@ -1052,6 +1099,47 @@
                 "theme"
             ],
             "time": "2019-03-08T04:32:52+00:00"
+        },
+        {
+            "name": "cwp/watea-theme",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/cwp-watea-theme.git",
+                "reference": "5c490fd4b16d2f69fff4f484145de87889555777"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/cwp-watea-theme/zipball/5c490fd4b16d2f69fff4f484145de87889555777",
+                "reference": "5c490fd4b16d2f69fff4f484145de87889555777",
+                "shasum": ""
+            },
+            "require": {
+                "cwp/starter-theme": "^2.0"
+            },
+            "suggest": {
+                "cwp/agency-extensions": "Much of the functionality in this theme is enabled by this module"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "installer-name": "watea",
+                "expose": [
+                    "dist",
+                    "ico",
+                    "images"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "CWP Watea theme",
+            "keywords": [
+                "cwp",
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2018-11-07T12:09:02+00:00"
         },
         {
             "name": "doctrine/instantiator",
